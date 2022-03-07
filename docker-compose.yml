@@ -1,0 +1,9 @@
+version: '3'
+services:
+  redis:
+    container_name: redis
+    command: redis-server --appendonly no --save "" --appendfsync no
+    image: redis:5.0.10-alpine
+    ports:
+      - '6379:6379'
+    restart: always

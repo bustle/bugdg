@@ -1,0 +1,22 @@
+{
+  "name": "bugdg",
+  "version": "1.0.0",
+  "description": "Fix the bug(s)!",
+  "main": "index.ts",
+  "scripts": {
+    "start": "rm -rf out && tsc && node out/server.js",
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  },
+  "type": "module",
+  "dependencies": {
+    "apollo-server-express": "^3.6.3",
+    "graphql": "^16.3.0",
+    "redis": "^4.0.4"
+  }
+}
